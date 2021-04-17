@@ -9,8 +9,11 @@ const ingredients = [
 
 
 const ulIngredients = document.getElementById("ingredients");
+
 const list = ingredients.map(option => {
     const ingredientsEl = document.createElement('li');
     ingredientsEl.textContent = option;
-    ulIngredients.appendChild(ingredientsEl);
+    return ingredientsEl;
 });
+ulIngredients.append(...list);
+

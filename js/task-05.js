@@ -1,7 +1,7 @@
 const inputValue = document.querySelector('#name-input');
 const outputValue = document.querySelector('#name-output');
 
-inputValue.addEventListener('change', onInputChange);
+inputValue.addEventListener('input', onInputChange);
 
 function onInputChange(event) {
   let inputText = event.currentTarget.value;

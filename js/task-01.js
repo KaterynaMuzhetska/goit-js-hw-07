@@ -1,7 +1,7 @@
-const categories = document.getElementById('categories');
-const items = categories.getElementsByClassName('item');
+const categoriesEl = document.querySelectorAll('.item');
+console.log('В списке' + ' ' + categoriesEl.length + ' категории.');
 
-for (let item of items) {
+for (let item of categoriesEl) {
     const title = item.getElementsByTagName('h2');
     const uls = item.getElementsByTagName('ul');
     
@@ -14,3 +14,4 @@ for (let item of items) {
     }
     
 }
+
